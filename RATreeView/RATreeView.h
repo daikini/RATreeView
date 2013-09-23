@@ -145,6 +145,8 @@ typedef enum RATreeViewRowAnimation {
 
 // Creating Table View Cells
 - (void)registerNib:(UINib *)nib forCellReuseIdentifier:(NSString *)identifier;
+- (void)registerClass:(Class)cellClass forCellReuseIdentifier:(NSString *)identifier NS_AVAILABLE_IOS(6_0);
+
 - (id)dequeueReusableCellWithIdentifier:(NSString *)identifier;
 
 // Accessing Header and Footer Views

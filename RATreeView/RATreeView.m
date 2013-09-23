@@ -216,6 +216,11 @@
   [self.tableView registerNib:nib forCellReuseIdentifier:identifier];
 }
 
+- (void)registerClass:(Class)cellClass forCellReuseIdentifier:(NSString *)identifier
+{
+  [self.tableView registerClass:cellClass forCellReuseIdentifier:identifier];
+}
+
 - (id)dequeueReusableCellWithIdentifier:(NSString *)identifier
 {
   return [self.tableView dequeueReusableCellWithIdentifier:identifier];
